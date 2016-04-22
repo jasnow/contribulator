@@ -26,6 +26,7 @@ gem 'pg_search'
 gem 'sprockets'
 gem 'jsonapi-resources'
 gem 'sassc-rails'
+gem 'schema_plus_pg_indexes'
 
 group :development do
   gem 'web-console'
@@ -40,6 +41,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'guard-migrate'
+  gem 'dotenv-rails'
 end
 
 group :production do
