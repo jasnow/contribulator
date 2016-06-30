@@ -7,7 +7,7 @@ gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'turbolinks', '2.5.3'
+gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'spring',                 group: :development
 gem 'spring-commands-rspec',  group: :development
