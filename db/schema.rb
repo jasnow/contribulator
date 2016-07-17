@@ -17,16 +17,16 @@ ActiveRecord::Schema.define(version: 20160421143043) do
   enable_extension "plpgsql"
 
   create_table "issues", force: :cascade do |t|
-    t.integer  "github_id",              null: false
-    t.string   "url",                    null: false
-    t.string   "title",                  null: false
+    t.integer  "github_id",  :null=>false
+    t.string   "url",        :null=>false
+    t.string   "title",      :null=>false
     t.string   "state"
-    t.integer  "comments",   default: 0
+    t.integer  "comments",   :default=>0
     t.datetime "closed_at"
     t.text     "body"
-    t.integer  "project_id",             null: false
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.integer  "project_id", :null=>false
+    t.datetime "created_at", :null=>false
+    t.datetime "updated_at", :null=>false
     t.integer  "number"
   end
 
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20160421143043) do
     t.string   "homepage"
     t.string   "main_language", :index=>{:name=>"index_projects_on_lower_main_language", :case_sensitive=>false}
     t.integer  "github_id"
-    t.boolean  "fork",          default: false
+    t.boolean  "fork",          :default=>false
     t.float    "score",         :default=>0.0, :index=>{:name=>"index_projects_on_score"}
     t.text     "description"
     t.datetime "last_scored"
@@ -44,15 +44,13 @@ ActiveRecord::Schema.define(version: 20160421143043) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "uid",         null: false
-    t.string   "nickname",    null: false
+    t.string   "uid",         :null=>false
+    t.string   "nickname",    :null=>false, :index=>{:name=>"index_users_on_nickname", :unique=>true}
     t.string   "gravatar_id"
     t.string   "token"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "users", ["nickname"], name: "index_users_on_nickname", unique: true, using: :btree
 
 end
