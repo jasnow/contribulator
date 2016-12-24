@@ -15,10 +15,6 @@ RSpec.describe Api::ProjectsController, type: :controller do
     it "data contains the project" do
       expect(JSON.parse(response.body)['data'].map { |e| e['id'] }).to eq(%w(123))
     end
-
-    it "meta total_records" do
-      expect(JSON.parse(response.body)['meta']['total_records']).to eq(1)
-    end
   end
 
   describe "GET #show" do
@@ -26,7 +22,7 @@ RSpec.describe Api::ProjectsController, type: :controller do
       let!(:project) { create(:project, github_id: 123, owner: 'jack', name: 'foo') }
 
       before do
-        get :show, id: 123
+        get :show, params: { id: 123 }
       end
 
       it "responds successfully with an HTTP 200 status code" do
@@ -40,10 +36,10 @@ RSpec.describe Api::ProjectsController, type: :controller do
       it "attributes" do
         expect(JSON.parse(response.body)['data']['attributes']).to eq(
           'owner' => 'jack',
-          'github_id' => 123,
           'name' => 'foo',
-          'name_with_owner' => 'jack/foo',
-          'score' => 20
+          'name-with-owner' => 'jack/foo',
+          'github-id' => 123,
+          'score' => 20.0
         )
       end
 
@@ -56,7 +52,7 @@ RSpec.describe Api::ProjectsController, type: :controller do
 
     context '404' do
       before do
-        get :show, id: 999
+        get :show, params: { id: 999 }
       end
 
       it "404" do
