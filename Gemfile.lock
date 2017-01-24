@@ -48,7 +48,7 @@ GEM
       sass (>= 3.3.4)
     bootswatch-rails (3.3.5)
       railties (>= 3.1)
-    bugsnag (5.0.1)
+    bugsnag (5.1.0)
     builder (3.2.3)
     codeclimate-test-reporter (1.0.5)
       simplecov
@@ -154,7 +154,7 @@ GEM
     multipart-post (2.0.0)
     nenv (0.3.0)
     netrc (0.11.0)
-    newrelic_rpm (3.17.2.327)
+    newrelic_rpm (3.18.0.329)
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
