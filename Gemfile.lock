@@ -41,7 +41,7 @@ GEM
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (7.1.4)
-    autoprefixer-rails (6.7.0)
+    autoprefixer-rails (6.7.1)
       execjs
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
@@ -291,8 +291,8 @@ GEM
       activerecord (>= 4.2, < 5.1)
       its-it (~> 1.2)
       schema_plus_core
-    schema_plus_pg_indexes (0.2.0)
-      activerecord (~> 5.0)
+    schema_plus_pg_indexes (0.2.1)
+      activerecord (~> 5.0, >= 5.0.1)
       its-it (~> 1.2)
       schema_plus_core (~> 2.0)
       schema_plus_indexes (~> 0.2, >= 0.2.4)
