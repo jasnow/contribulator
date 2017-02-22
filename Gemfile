@@ -21,7 +21,7 @@ gem 'github-markup', require: 'github/markup'
 gem 'redcarpet'
 gem 'pg_search'
 gem 'sprockets'
-gem 'jsonapi-resources', '0.9.0.beta3' # LOCKED DOWN
+gem 'jsonapi-resources'
 gem 'sassc-rails'
 gem 'schema_plus_pg_indexes'
 
