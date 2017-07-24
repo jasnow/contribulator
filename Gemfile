@@ -19,7 +19,7 @@ gem 'will_paginate-bootstrap'
 gem 'faraday-http-cache'
 gem 'github-markup', require: 'github/markup'
 gem 'redcarpet'
-gem 'pg_search', '2.0.0' # LOCKED DOWN
+gem 'pg_search'
 gem 'sprockets'
 gem 'jsonapi-resources'
 gem 'sassc-rails'
