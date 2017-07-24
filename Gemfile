@@ -24,7 +24,7 @@ gem 'sprockets'
 gem 'jsonapi-resources'
 gem 'sassc-rails'
 gem 'schema_plus_pg_indexes'
-gem 'schema_plus_indexes', git: 'https://github.com/elsurudo/schema_plus_indexes.git', branch: 'rails-5.1' # TEMP FIX (REMOVE IF ISS#15 for schema_plus_pg_indexes is fixed
+gem 'schema_plus_indexes'
 
 group :development do
   gem 'web-console'
