@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.5.3'
 
 gem 'rails', '5.1.6.1'
 gem 'pg'
@@ -21,7 +21,7 @@ gem 'github-markup', require: 'github/markup'
 gem 'redcarpet'
 gem 'pg_search'
 gem 'sprockets'
-gem 'jsonapi-resources', '0.9.0'
+gem 'jsonapi-resources'
 gem 'sassc-rails'
 gem 'schema_plus_pg_indexes'
 gem 'schema_plus_indexes'
@@ -57,6 +57,6 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
-  gem 'simplecov', '0.16.1', require: false
+  gem 'simplecov', require: false
   gem 'codeclimate-test-reporter', require: false
 end
