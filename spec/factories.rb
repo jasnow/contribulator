@@ -1,4 +1,4 @@
-FactoryGirl.define do
+FactoryBot.define do
   factory :issue do
     sequence :github_id do |n|
       "whatever-#{n}"
@@ -28,6 +28,6 @@ FactoryGirl.define do
       "#{Faker::Lorem.word}-#{n}"
     end
 
-    score 20
+    score { 20 }
   end
 end

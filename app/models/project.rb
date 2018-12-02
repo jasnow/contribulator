@@ -1,4 +1,4 @@
-class Project < ActiveRecord::Base
+class Project < ApplicationRecord
   include PgSearch
 
   validates :name, :owner, presence: true
@@ -105,7 +105,10 @@ class Project < ActiveRecord::Base
   end
 
   def open_issues
-    @issues ||= github_client.list_issues(repo_id, state: 'open').first(5)
+    @issues ||= github_client
+      .list_issues(repo_id, state: 'open')
+      .delete_if { |issue| issue.pull_request.present? } # Don’t list PRs
+      .first(5)
   end
 
   def repo

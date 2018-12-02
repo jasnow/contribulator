@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.4.2'
 
-gem 'rails', '5.1.4'
+gem 'rails', '5.1.6.1'
 gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
@@ -21,7 +21,7 @@ gem 'github-markup', require: 'github/markup'
 gem 'redcarpet'
 gem 'pg_search'
 gem 'sprockets'
-gem 'jsonapi-resources'
+gem 'jsonapi-resources', '0.9.0'
 gem 'sassc-rails'
 gem 'schema_plus_pg_indexes'
 gem 'schema_plus_indexes'
@@ -34,7 +34,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'database_cleaner'
   gem 'faker'
   gem 'guard'
@@ -57,6 +57,6 @@ end
 group :test do
   gem 'vcr'
   gem 'webmock'
-  gem 'simplecov', require: false
+  gem 'simplecov', '0.16.1', require: false
   gem 'codeclimate-test-reporter', require: false
 end

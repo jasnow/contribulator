@@ -15,6 +15,10 @@ RSpec.describe Api::ProjectsController, type: :controller do
     it "data contains the project" do
       expect(JSON.parse(response.body)['data'].map { |e| e['id'] }).to eq(%w(123))
     end
+
+    it "meta contains the record count" do
+      expect(JSON.parse(response.body)['meta']['record_count']).to eq(1)
+    end
   end
 
   describe "GET #show" do
@@ -37,8 +41,8 @@ RSpec.describe Api::ProjectsController, type: :controller do
         expect(JSON.parse(response.body)['data']['attributes']).to eq(
           'owner' => 'jack',
           'name' => 'foo',
-          'name-with-owner' => 'jack/foo',
-          'github-id' => 123,
+          'name_with_owner' => 'jack/foo',
+          'github_id' => 123,
           'score' => 20.0
         )
       end

@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20160421143043) do
     t.string   "main_language", :index=>{:name=>"index_projects_on_lower_main_language", :case_sensitive=>false}
     t.integer  "github_id"
     t.boolean  "fork",          :default=>false
-    t.float    "score",         :default=>0.0, :index=>{:name=>"index_projects_on_score"}
+    t.float    "score",         :default=>0.0, :index=>{:name=>"index_projects_on_score", :order=>{:score=>:asc}}
     t.text     "description"
     t.datetime "last_scored"
 
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20160421143043) do
 
   create_table "users", force: :cascade do |t|
     t.string   "uid",         :null=>false
-    t.string   "nickname",    :null=>false, :index=>{:name=>"index_users_on_nickname", :unique=>true}
+    t.string   "nickname",    :null=>false, :index=>{:name=>"index_users_on_nickname", :unique=>true, :order=>{:nickname=>:asc}}
     t.string   "gravatar_id"
     t.string   "token"
     t.string   "email"
