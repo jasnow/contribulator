@@ -41,7 +41,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
-    autoprefixer-rails (9.4.0)
+    autoprefixer-rails (9.4.1)
       execjs
     bindex (0.5.0)
     bootstrap-sass (3.3.7)
@@ -289,7 +289,7 @@ GEM
     schema_monkey (2.1.5)
       activerecord (>= 4.2)
       modware (~> 0.1)
-    schema_plus_core (2.2.0)
+    schema_plus_core (2.2.1)
       activerecord (~> 5.0)
       its-it (~> 1.2)
       schema_monkey (~> 2.1)
