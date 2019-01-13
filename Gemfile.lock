@@ -41,7 +41,7 @@ GEM
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
-    autoprefixer-rails (9.4.4)
+    autoprefixer-rails (9.4.5)
       execjs
     bindex (0.5.0)
     bootstrap-sass (3.4.0)
@@ -161,7 +161,7 @@ GEM
     netrc (0.11.0)
     newrelic_rpm (5.6.0.349)
     nio4r (2.3.1)
-    nokogiri (1.10.0)
+    nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
