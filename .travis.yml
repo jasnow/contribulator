@@ -8,7 +8,6 @@ before_install:
   - gem update --system
 before_script:
   - psql -c 'create database contribulator_test' -U postgres
-sudo: false
 cache: bundler
 env:
   - DB=postgresql
