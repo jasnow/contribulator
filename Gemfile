@@ -3,7 +3,6 @@ ruby '2.7.0'
 
 gem 'rails', '5.2.3'
 gem 'pg'
-gem 'sass-rails'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -19,9 +18,9 @@ gem 'faraday-http-cache'
 gem 'github-markup', require: 'github/markup'
 gem 'redcarpet'
 gem 'pg_search'
+gem 'sassc-rails'
 gem 'sprockets'
 gem 'jsonapi-resources'
-gem 'sassc-rails'
 gem 'schema_plus_indexes'
 
 group :development do
