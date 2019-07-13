@@ -1,5 +1,6 @@
+# coding: utf-8
 class Project < ApplicationRecord
-  include PgSearch
+  include PgSearch::Model
 
   validates :name, :owner, presence: true
   validates :name, uniqueness: { scope: :owner, case_sensitive: false }
