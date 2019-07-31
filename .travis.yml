@@ -11,3 +11,5 @@ before_script:
 cache: bundler
 env:
   - DB=postgresql
+addons:
+  postgresql: "9.6"
