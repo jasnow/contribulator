@@ -2,7 +2,11 @@ require 'rails_helper'
 
 describe ScoreCalculator do
   it "should reject invalid projects" do
-    expect(-> { described_class.new(Object.new) }).to raise_error("Invalid type for ScoreCalculator, expected Project")
+    expect {
+      begin
+        described_class.new(Object.new) 
+      end
+    }.to raise_error("Invalid type for ScoreCalculator, expected Project")
   end
 
   it "calculates scores" do
