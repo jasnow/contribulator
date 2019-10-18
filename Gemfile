@@ -30,7 +30,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'rspec-rails', '4.0.0.beta3' # 4/26/2019: LOCKED DOWN
+  gem 'rspec-rails', '4.0.0.beta3' # 10/18/2019: LOCKED DOWN
   gem 'factory_bot_rails'
   gem 'database_cleaner'
   gem 'faker'
