@@ -60,11 +60,11 @@ RSpec.describe Api::ProjectsController, type: :controller do
       end
 
       it "404" do
-#TODO:        expect(response).to have_http_status(404)
+        expect(response).to have_http_status(404)
       end
 
       it "errors" do
-#TODO:        expect(JSON.parse(response.body)['errors'].first['title']).to eq('Record not found')
+        expect(JSON.parse(response.body)['errors'].first['title']).to eq('Record not found')
       end
     end
   end
