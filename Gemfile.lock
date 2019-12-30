@@ -267,7 +267,7 @@ GEM
       rspec-expectations (~> 3.8)
       rspec-mocks (~> 3.8)
       rspec-support (~> 3.8)
-    rspec-support (3.9.1)
+    rspec-support (3.9.2)
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
