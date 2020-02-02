@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/octokit/octokit.rb
-  revision: 4534c71e017d13b5518d9bd259b795863b282a6d
+  revision: c662369386d07a3c55448264686e7f8b80e9fa1b
   specs:
     octokit (4.15.0)
       faraday (>= 0.9)
@@ -93,7 +93,7 @@ GEM
       multipart-post (>= 1.2, < 3)
     faraday-http-cache (2.0.0)
       faraday (~> 0.8)
-    ffi (1.12.1)
+    ffi (1.12.2)
     foreman (0.87.0)
     formatador (0.2.5)
     github-markup (3.0.4)
