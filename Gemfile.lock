@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/octokit/octokit.rb
-  revision: c662369386d07a3c55448264686e7f8b80e9fa1b
+  revision: fa145c9d0d313645009787ca244b7bc73d39a154
   specs:
     octokit (4.15.0)
       faraday (>= 0.9)
