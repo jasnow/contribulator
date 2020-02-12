@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/octokit/octokit.rb
-  revision: fa145c9d0d313645009787ca244b7bc73d39a154
+  revision: 429f803751f390905d09b9278762494d14010dc2
   specs:
     octokit (4.15.0)
       faraday (>= 0.9)
@@ -291,10 +291,10 @@ GEM
       its-it (~> 1.2)
       schema_plus_core
     shellany (0.0.1)
-    simplecov (0.18.1)
+    simplecov (0.18.2)
       docile (~> 1.1)
-      simplecov-html (~> 0.11.0)
-    simplecov-html (0.11.0)
+      simplecov-html (~> 0.11)
+    simplecov-html (0.12.0)
     spring (2.1.0)
     spring-commands-rspec (1.0.4)
       spring (>= 0.9.1)
